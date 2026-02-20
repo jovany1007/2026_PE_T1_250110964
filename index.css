@@ -1,0 +1,187 @@
+/* =========================
+   Reset básico para que todo se vea ordenado
+   ========================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =========================
+   Fondo degradado claro (no lastima la vista)
+   ========================= */
+body{
+    background: linear-gradient(135deg, #f5f9ff, #e3f0ff);
+    color: #2c3e50; /* color principal del texto */
+    padding: 40px;
+}
+
+/* =========================
+   Contenedor principal centrado
+   ========================= */
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* =========================
+   Estilo de los títulos
+   ========================= */
+h2{
+    margin: 40px 0 20px 0;
+    font-size: 30px;
+    color: #1e3a5f;
+    position: relative;
+}
+
+/* Línea decorativa debajo del título */
+h2::after{
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #4a90e2, #00c6ff);
+    display: block;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+/* =========================
+   Caja donde van los datos
+   ========================= */
+.steps{
+    background: rgba(255,255,255,0.8); /* efecto tipo glass */
+    backdrop-filter: blur(8px);
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+    transition: 0.4s ease;
+}
+
+/* Pequeña animación cuando pasas el mouse */
+.steps:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* =========================
+   Tablas con estilo moderno
+   ========================= */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0 40px 0;
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* Encabezado de tabla */
+th{
+    background: linear-gradient(90deg, #4a90e2, #5bbcff);
+    color: white;
+    padding: 14px;
+    font-weight: 600;
+}
+
+/* Celdas normales */
+td{
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #eef2f7;
+}
+
+/* Efecto al pasar el mouse por fila */
+tr:hover{
+    background: #f4f9ff;
+    transition: 0.3s;
+}
+
+/* =========================
+   Galería de gráficas
+   ========================= */
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+/* =========================
+   Tarjetas donde van las imágenes
+   ========================= */
+.card{
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    transition: 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Barra decorativa arriba de cada card */
+.card::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #4a90e2, #00c6ff);
+}
+
+/* Animación suave */
+.card:hover{
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* Imagen dentro de la tarjeta */
+.card img{
+    width: 100%;
+    border-radius: 12px;
+    transition: 0.4s ease;
+}
+
+/* Zoom leve cuando pasas el mouse */
+.card img:hover{
+    transform: scale(1.07);
+}
+
+/* =========================
+   Botones con degradado
+   ========================= */
+.botones{
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #4a90e2, #00c6ff);
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.4s ease;
+    box-shadow: 0 8px 20px rgba(74,144,226,0.3);
+}
+
+/* Efecto al pasar el mouse */
+.botones:hover{
+    transform: scale(1.08);
+    box-shadow: 0 12px 30px rgba(74,144,226,0.4);
+}
+
+/* =========================
+   Estilo para los datos en bloque
+   ========================= */
+pre{
+    background: #f7fbff;
+    padding: 20px;
+    border-radius: 15px;
+    overflow-x: auto;
+    margin-top: 15px;
+    border-left: 5px solid #4a90e2;
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.05);
+}
