@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Descripción de datos</title>
+
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+<div class="container">
+
+<h2><p><strong>Ejemplo 1:</strong> Datos cuantitativos discretos</p></h2>
+<p><strong>Problema:</strong> Número de refrescos consumidos por 100 estudiantes en una semana.</p>
+
+<div class="steps">
+
+<h2> Datos</h2>
+<p>
+Los 100 datos se ordenan de menor a mayor.  
+Los valores observados van de <strong>0 a 4 refrescos</strong>.
+</p>
+
+<pre>
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,
+3,3,3,3,3,
+4,4,4,4,4
+</pre>
+
+</div>
+
+<h2>Tabla. Número de refrescos consumidos por 100 estudiantes</h2>
+
+<table border="1">
+<tr>
+<th>Clase</th>
+<th>Límite inferior</th>
+<th>Límite superior</th>
+<th>Marca de clase</th>
+<th>f<sub>a</sub></th>
+<th>F<sub>a</sub></th>
+<th>f<sub>r</sub></th>
+</tr>
+
+<tr>
+<td>1</td><td>0.00</td><td>0.50</td><td>0.25</td><td>20</td><td>20</td><td>0.20</td>
+</tr>
+
+<tr>
+<td>2</td><td>0.50</td><td>1.00</td><td>0.75</td><td>20</td><td>40</td><td>0.20</td>
+</tr>
+
+<tr>
+<td>3</td><td>1.00</td><td>1.50</td><td>1.25</td><td>20</td><td>60</td><td>0.20</td>
+</tr>
+
+<tr>
+<td>4</td><td>1.50</td><td>2.00</td><td>1.75</td><td>15</td><td>75</td><td>0.15</td>
+</tr>
+
+<tr>
+<td>5</td><td>2.00</td><td>2.50</td><td>2.25</td><td>10</td><td>85</td><td>0.10</td>
+</tr>
+
+<tr>
+<td>6</td><td>2.50</td><td>3.00</td><td>2.75</td><td>5</td><td>90</td><td>0.05</td>
+</tr>
+
+<tr>
+<td>7</td><td>3.00</td><td>3.50</td><td>3.25</td><td>5</td><td>95</td><td>0.05</td>
+</tr>
+
+<tr>
+<td>8</td><td>3.50</td><td>4.00</td><td>3.75</td><td>5</td><td>100</td><td>0.05</td>
+</tr>
+
+<tr>
+<th>Total</th>
+<th></th>
+<th></th>
+<th></th>
+<th>100</th>
+<th>100</th>
+<th>1.00</th>
+</tr>
+
+</table>
+<br>
+<div class="galeria">
+
+    <div class="card">
+        <img src="Imaganes/histograma_FR.png">
+        <h3>Histograma</h3>
+    </div>
+
+    <div class="card">
+        <img src="Imaganes/Poligono_FR.png">
+        <h3>Polígono de Frecuencias</h3>
+    </div>
+
+    <div class="card">
+        <img src="Imaganes/barras_refrescos.png">
+        <h3>Barras Horizontales</h3>
+    </div>
+
+    <div class="card">
+        <img src="Imaganes/ojiva_refrescos.png">
+        <h3>Ojiva</h3>
+    </div>
+
+    <div class="card">
+        <img src="Imaganes/pastel_FR.png">
+        <h3>Gráfica de Pastel</h3>
+    </div>
+
+</div>
+
+<br>
+<a href="https://www.kaggle.com/code/jonathanjovanyperez/ejercicio1"
+       target="_blank"
+       class="botones">
+        Ver códigos de las gráficas
+    </a>
+
+
+
+<h2><p><strong>Ejemplo 2:</strong> Datos cuantitativos continuos</p></h2>
+<p><strong>Problema:</strong> Estatura de 100 estudiantes medida en metros.</p>
+
+<div class="steps">
+
+<h2>Datos</h2>
+<p>
+Las 100 estaturas se ordenan de menor a mayor.  
+Los valores observados van de <strong>1.45 m a 1.85 m</strong>.
+</p>
+
+<pre>
+1.45,1.46,1.47,1.48,1.49,
+1.50,1.50,1.51,1.52,1.53,
+1.54,1.55,1.55,1.56,1.57,
+1.58,1.59,1.60,1.60,1.61,
+1.62,1.63,1.64,1.65,1.65,
+1.66,1.67,1.68,1.69,1.70,
+1.70,1.71,1.72,1.73,1.74,
+1.75,1.75,1.76,1.77,1.78,
+1.79,1.80,1.80,1.81,1.82,
+1.83,1.84,1.85
+</pre>
+
+</div>
+
+<h2>Tabla. Estatura de 100 estudiantes</h2>
+
+<table border="1">
+<tr>
+<th>Clase</th>
+<th>Límite inferior</th>
+<th>Límite superior</th>
+<th>Marca de clase</th>
+<th>f<sub>a</sub></th>
+<th>F<sub>a</sub></th>
+<th>f<sub>r</sub></th>
+</tr>
+
+<tr>
+<td>1</td><td>1.45</td><td>1.50</td><td>1.475</td><td>5</td><td>5</td><td>0.05</td>
+</tr>
+
+<tr>
+<td>2</td><td>1.50</td><td>1.55</td><td>1.525</td><td>8</td><td>13</td><td>0.08</td>
+</tr>
+
+<tr>
+<td>3</td><td>1.55</td><td>1.60</td><td>1.575</td><td>12</td><td>25</td><td>0.12</td>
+</tr>
+
+<tr>
+<td>4</td><td>1.60</td><td>1.65</td><td>1.625</td><td>18</td><td>43</td><td>0.18</td>
+</tr>
+
+<tr>
+<td>5</td><td>1.65</td><td>1.70</td><td>1.675</td><td>20</td><td>63</td><td>0.20</td>
+</tr>
+
+<tr>
+<td>6</td><td>1.70</td><td>1.75</td><td>1.725</td><td>17</td><td>80</td><td>0.17</td>
+</tr>
+
+<tr>
+<td>7</td><td>1.75</td><td>1.80</td><td>1.775</td><td>12</td><td>92</td><td>0.12</td>
+</tr>
+
+<tr>
+<td>8</td><td>1.80</td><td>1.85</td><td>1.825</td><td>8</td><td>100</td><td>0.08</td>
+</tr>
+
+<tr>
+<th>Total</th>
+<th></th>
+<th></th>
+<th></th>
+<th>100</th>
+<th>100</th>
+<th>1.00</th>
+</tr>
+
+</table>
+<br>
+
+<div class="galeria">
+
+    <div class="card">
+        <img src="Imaganes/histograma_estaturas_FR.png">
+        <h3>Histograma</h3>
+    </div>
+
+    <div class="card">
+        <img src="Imaganes/poligono_estaturas_FR.png">
+        <h3>Polígono de Frecuencias</h3>
+    </div>
+
+    <div class="card">
+        <img src="Imaganes/barras_estaturas.png">
+        <h3>Barras Horizontales</h3>
+    </div>
+
+    <div class="card">
+        <img src="Imaganes/ojiva_estaturas.png">
+        <h3>Ojiva</h3>
+    </div>
+
+    <div class="card">
+        <img src="Imaganes/pastel_estaturas_FR.png">
+        <h3>Gráfica de Pastel</h3>
+    </div>
+
+</div>
+<br>
+
+    <a href="https://www.kaggle.com/code/jonathanjovanyperez/ejercicio2"
+       target="_blank"
+       class="botones">
+        Ver códigos de las gráficas
+    </a>
+
+
+<h2><p><strong>Ejemplo 3:</strong> Datos cualitativos nominales</p></h2>
+<p><strong>Problema:</strong> Medio de transporte utilizado por 100 estudiantes para llegar a la escuela.</p>
+
+<div class="steps">
+
+<h2>Datos</h2>
+
+<pre>
+Autobús (38 veces)
+Automóvil (27 veces)
+Bicicleta (15 veces)
+A pie (12 veces)
+Motocicleta (8 veces)
+</pre>
+
+</div>
+
+<h2>Tabla. Medio de transporte utilizado por los estudiantes</h2>
+
+<table border="1">
+<tr>
+<th>Medio de transporte</th>
+<th>f<sub>a</sub></th>
+<th>F<sub>a</sub></th>
+<th>f<sub>r</sub></th>
+</tr>
+
+<tr>
+<td>Autobús</td>
+<td>38</td>
+<td>38</td>
+<td>0.38</td>
+</tr>
+
+<tr>
+<td>Automóvil</td>
+<td>27</td>
+<td>65</td>
+<td>0.27</td>
+</tr>
+
+<tr>
+<td>Bicicleta</td>
+<td>15</td>
+<td>80</td>
+<td>0.15</td>
+</tr>
+
+<tr>
+<td>A pie</td>
+<td>12</td>
+<td>92</td>
+<td>0.12</td>
+</tr>
+
+<tr>
+<td>Motocicleta</td>
+<td>8</td>
+<td>100</td>
+<td>0.08</td>
+</tr>
+
+<tr>
+<th>Total</th>
+<th>100</th>
+<th>100</th>
+<th>1.00</th>
+</tr>
+
+</table>
+<br>
+<div class="galeria">
+     <div class="card">
+        <img src="Imaganes/poligono_transporte_FR.png">
+        <h3>Poligono de Frecuencias</h3>
+    </div>
+    
+
+    <div class="card">
+        <img src="Imaganes/histograma_transporte_FR.png">
+        <h3>Histograma</h3>
+    </div>
+
+    
+
+    <div class="card">
+        <img src="Imaganes/barras_horizontales_transporte.png">
+        <h3>Barras Horizontales</h3>
+    </div>
+
+     <div class="card">
+        <img src="Imaganes/ojiva_transporte.png">
+        <h3>Ojiva</h3>
+    </div>
+
+    <div class="card">
+        <img src="Imaganes/pastel_transporte.png">
+        <h3>Gráfica de Pastel</h3>
+    </div>
+
+</div>
+
+<br>
+  <a href="https://www.kaggle.com/code/jonathanjovanyperez/ejercicio3"
+       target="_blank"
+       class="botones">
+        Ver códigos de las gráficas
+    </a>
+</div>
+</body>
+</html>
